@@ -1,0 +1,102 @@
+2018-02-28 16:40:41.2006|DEBUG|WebSocketServer.Logger|聊天服务器启动。监听地址：172.20.113.42, 端口：4141
+2018-02-28 16:40:41.3367|DEBUG|WebSocketServer.Logger|WebSocket服务器地址: ws://172.20.113.42:4141/chat
+2018-02-28 16:40:51.4196|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'e',Type:'1',Message:'e',Action:'1'}"]
+2018-02-28 16:56:33.6456|DEBUG|WebSocketServer.Logger|聊天服务器启动。监听地址：172.20.113.42, 端口：4141
+2018-02-28 16:56:33.7797|DEBUG|WebSocketServer.Logger|WebSocket服务器地址: ws://172.20.113.42:4141/chat
+2018-02-28 16:57:14.4880|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'abc',Type:'1',Message:'abc',Action:'1'}"]
+2018-02-28 16:57:24.9917|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'abc',Type:"2",Message:'      0                   1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-------+-+-------------+-------------------------------+
+     |F|R|R|R| opcode|M| Payload len |    Extended payload length    |
+     |I|S|S|S|  (4)  |A|     (7)     |             (16/64)           |
+     |N|V|V|V|       |S|             |   (if payload len==126/127)   |
+     | |1|2|3|       |K|             |                               |
+     +-+-+-+-+-------+-+-------------+ - - - - - - - - - - - - - - - +
+     |     Extended payload length continued, if payload len == 127  |
+     + - - - - - - - - - - - - - - - +-------------------------------+
+     |                               |Masking-key, if MASK set to 1  |
+     +-------------------------------+-------------------------------+
+     | Masking-key (continued)       |          Payload Data         |
+     +-------------------------------- - - - - - - - - - - - - - - - +
+     :                     Payload Data continued ...                :
+     + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+     |                     Payload Data continued ...                |
+     +---------------------------------------------------------------+
+',Action:"3"}"]
+2018-02-28 16:57:44.4637|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'abc',Type:"2",Message:'      0                   1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-------+-+-------------+-------------------------------+
+     |F|R|R|R| opcode|M| Payload len |    Extended payload length    |
+     |I|S|S|S|  (4)  |A|     (7)     |             (16/64)           |
+     |N|V|V|V|       |S|             |   (if payload len==126/127)   |
+     | |1|2|3|       |K|             |                               |
+     +-+-+-+-+-------+-+-------------+ - - - - - - - - - - - - - - - +
+     |     Extended payload length continued, if payload len == 127  |
+     + - - - - - - - - - - - - - - - +-------------------------------+
+     |                               |Masking-key, if MASK set to 1  |
+     +-------------------------------+-------------------------------+
+     | Masking-key (continued)       |          Payload Data         |
+     +-------------------------------- - - - - - - - - - - - - - - - +
+     :                     Payload Data continued ...                :
+     + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+     |                     Payload Data continued ...                |
+     +---------------------------------------------------------------+
+',Action:"3"}"]
+2018-02-28 16:58:12.7198|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'eef',Type:'1',Message:'eef',Action:'1'}"]
+2018-02-28 16:58:25.2635|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'eef',Type:"2",Message:'      0                   1                   2                   3
+      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+     +-+-+-+-+-------+-+-------------+-------------------------------+
+     |F|R|R|R| opcode|M| Payload len |    Extended payload length    |
+     |I|S|S|S|  (4)  |A|     (7)     |             (16/64)           |
+     |N|V|V|V|       |S|             |   (if payload len==126/127)   |
+     | |1|2|3|       |K|             |                               |
+     +-+-+-+-+-------+-+-------------+ - - - - - - - - - - - - - - - +
+     |     Extended payload length continued, if payload len == 127  |
+     + - - - - - - - - - - - - - - - +-------------------------------+
+     |                               |Masking-key, if MASK set to 1  |
+     +-------------------------------+-------------------------------+
+     | Masking-key (continued)       |          Payload Data         |
+     +-------------------------------- - - - - - - - - - - - - - - - +
+     :                     Payload Data continued ...                :
+     + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+     |                     Payload Data continued ...        ',Action:"3"}"]
+2018-02-28 16:58:47.7466|DEBUG|WebSocketServer.Logger|接受到的信息 ["logout:eef"]
+2018-02-28 16:58:56.7534|DEBUG|WebSocketServer.Logger|接受到的信息 ["logout:abc"]
+2018-02-28 17:03:47.7541|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'df',Type:'1',Message:'df',Action:'1'}"]
+2018-02-28 17:04:00.0355|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'df',Type:"2",Message:'Array.Clear(receivedDataBuffer, 0, receivedDataBuffer.Length);
+                    ConnectionSocket.BeginReceive(receivedDataBuffer, 0, receivedDataBuffer.Length, 0, new AsyncCallback(Read), null);
+                    //昵称重复，释放连接
+                    if (WebSocketServer.userExists)
+                    {
+                        this.ConnectionSocket.Close();
+                        this.ConnectionSocket.Dispose();
+                    }                    ',Action:"3"}"]
+2018-02-28 17:04:08.8807|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'df',Type:"2",Message:'Array.Clear(receivedDataBuffer, 0, receivedDataBuffer.Length);
+                    ConnectionSocket.BeginReceive(receivedDataBuffer, 0, receivedDataBuffer.Length, 0, new AsyncCallback(Read), null);
+                    //昵称重复，释放连接
+                    if (WebSocketServer.userExists)
+                    {
+                        this.ConnectionSocket.Close();
+                        this.ConnectionSocket.Dispose();
+                    }                    ',Action:"3"}"]
+2018-02-28 17:04:30.0376|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'df',Type:"2",Message:'Array.Clear(receivedDataBuffer, 0, receivedDataBuffer.Length);
+                    ConnectionSocket.BeginReceive(receivedDataBuffer, 0, receivedDataBuffer.Length, 0, new AsyncCallback(Read), null);
+                    //昵称重复，释放连接
+                    if (WebSocketServer.userExists)
+                    {
+                        this.ConnectionSocket.Close();
+                        this.ConnectionSocket.Dispose();
+                    }                    ',Action:"3"}"]
+2018-02-28 17:17:36.1780|DEBUG|WebSocketServer.Logger|接受到的信息 ["logout:df"]
+2018-02-28 17:17:37.1767|DEBUG|WebSocketServer.Logger|你的主机中的软件中止了一个已建立的连接。
+2018-02-28 17:19:10.3499|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'fef',Type:'1',Message:'fef',Action:'1'}"]
+2018-02-28 17:19:22.1801|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'fef',Type:"2",Message:'#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"',Action:"3"}"]
+2018-02-28 17:19:34.1113|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'fef',Type:"2",Message:'2018/02/28 17:19:10 
+:欢迎【fef】来到聊天室！
+2018/02/28 17:19:22 
+fef:#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"2018/02/28 17:19:10 
+:欢迎【fef】来到聊天室！
+2018/02/28 17:19:22 
+fef:#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"',Action:"3"}"]
+2018-02-28 17:19:51.0345|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'fef',Type:"2",Message:'fa ',Action:"3"}"]
+2018-02-28 17:20:04.8581|DEBUG|WebSocketServer.Logger|接受到的信息 ["logout:fef"]
