@@ -156,6 +156,7 @@ namespace WebSocketServer
             while (true)
             {
                 sc = Listener.Accept();
+                userExists = false;//默认无重名
                 if (sc != null)
                 {
                     System.Threading.Thread.Sleep(100);
@@ -215,7 +216,7 @@ namespace WebSocketServer
                 connectionSocketList.ForEach(
                    (SocketConnection sc) =>
                    {
-                       if (!userListOnline.Contains(sc.Name))
+                       if (!string.IsNullOrEmpty(sc.Name) && !userListOnline.Contains(sc.Name))
                        {
                            userListOnline.Add(sc.Name);
                        }

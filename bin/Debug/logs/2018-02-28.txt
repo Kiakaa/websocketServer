@@ -100,3 +100,25 @@ fef:#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe
 fef:#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"#scrollMe [scrollTop]="scrollMe.scrollHeight"',Action:"3"}"]
 2018-02-28 17:19:51.0345|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'fef',Type:"2",Message:'fa ',Action:"3"}"]
 2018-02-28 17:20:04.8581|DEBUG|WebSocketServer.Logger|接受到的信息 ["logout:fef"]
+2018-02-28 20:54:52.3489|DEBUG|WebSocketServer.Logger|聊天服务器启动。监听地址：172.20.113.42, 端口：4141
+2018-02-28 20:54:52.4139|DEBUG|WebSocketServer.Logger|WebSocket服务器地址: ws://172.20.113.42:4141/chat
+2018-02-28 20:55:49.6787|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'a',Type:'1',Message:'a',Action:'1'}"]
+2018-02-28 20:55:53.4944|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'b',Type:'1',Message:'b',Action:'1'}"]
+2018-02-28 20:56:22.1704|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'b',Type:'1',Message:'b',Action:'1'}"]
+2018-02-28 21:00:19.1823|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'b',Type:'1',Message:'b',Action:'1'}"]
+2018-02-28 21:01:19.3303|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'b',Type:'1',Message:'b',Action:'1'}"]
+2018-02-28 21:04:08.1347|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'be',Type:'1',Message:'be',Action:'1'}"]
+2018-02-28 21:08:43.8457|DEBUG|WebSocketServer.Logger|聊天服务器启动。监听地址：172.20.113.42, 端口：4141
+2018-02-28 21:08:43.9287|DEBUG|WebSocketServer.Logger|WebSocket服务器地址: ws://172.20.113.42:4141/chat
+2018-02-28 21:08:55.0852|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'a',Type:'1',Message:'a',Action:'1'}"]
+2018-02-28 21:09:03.0272|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'b',Type:'1',Message:'b',Action:'1'}"]
+2018-02-28 21:09:14.2029|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'b',Type:'1',Message:'b',Action:'1'}"]
+2018-02-28 21:09:25.4487|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'b',Type:'1',Message:'b',Action:'1'}"]
+2018-02-28 21:09:37.5193|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'bb',Type:'1',Message:'bb',Action:'1'}"]
+2018-02-28 21:13:44.2232|DEBUG|WebSocketServer.Logger|聊天服务器启动。监听地址：172.20.113.42, 端口：4141
+2018-02-28 21:13:44.3523|DEBUG|WebSocketServer.Logger|WebSocket服务器地址: ws://172.20.113.42:4141/chat
+2018-02-28 21:13:58.7614|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'a',Type:'1',Message:'a',Action:'1'}"]
+2018-02-28 21:14:08.1930|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'b',Type:'1',Message:'b',Action:'1'}"]
+2018-02-28 21:14:16.2869|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'b',Type:'1',Message:'b',Action:'1'}"]
+2018-02-28 21:15:05.6891|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'b',Type:'1',Message:'b',Action:'1'}"]
+2018-02-28 21:16:08.8089|DEBUG|WebSocketServer.Logger|接受到的信息 ["{Auth:'bc',Type:'1',Message:'bc',Action:'1'}"]

@@ -1,0 +1,11 @@
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\bin\Debug\NLog.config
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\bin\Debug\WebSocketsServer.exe
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\bin\Debug\WebSocketsServer.pdb
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\bin\Debug\Newtonsoft.Json.dll
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\bin\Debug\NLog.dll
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\bin\Debug\Newtonsoft.Json.xml
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\bin\Debug\NLog.xml
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\obj\Debug\WebSocketsServer.csprojResolveAssemblyReference.cache
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\obj\Debug\WebSocketsServer.csproj.CoreCompileInputs.cache
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\obj\Debug\WebSocketsServer.exe
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\obj\Debug\WebSocketsServer.pdb
