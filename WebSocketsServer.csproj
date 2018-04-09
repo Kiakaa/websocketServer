@@ -57,6 +57,7 @@
     <Compile Include="EventHandler\DisconnectedEventHandler.cs" />
     <Compile Include="EventHandler\NewConnectionEventHandler.cs" />
     <Compile Include="SocketConnection.cs" />
+    <Compile Include="Util.cs" />
     <Compile Include="WebSocketsServer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

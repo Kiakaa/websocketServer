@@ -166,11 +166,18 @@ namespace WebSocketServer
                     socketConn.scDataReceived += new DataReceivedEventHandler(socketConn_BroadcastMessage);
                     socketConn.scDisconnected += new DisconnectedEventHandler(socketConn_Disconnected);
 
-                    socketConn.ConnectionSocket.BeginReceive(socketConn.receivedDataBuffer,
-                                                             0, socketConn.receivedDataBuffer.Length, 
-                                                             0, new AsyncCallback(socketConn.ManageHandshake), 
-                                                             socketConn.ConnectionSocket.Available);
-                    connectionSocketList.Add(socketConn);
+                    try
+                    {
+                        socketConn.ConnectionSocket.BeginReceive(socketConn.receivedDataBuffer,
+                                                                 0, socketConn.receivedDataBuffer.Length,
+                                                                 0, new AsyncCallback(socketConn.ManageHandshake),
+                                                                 socketConn.ConnectionSocket.Available);
+                        connectionSocketList.Add(socketConn);
+                    }
+                    catch (Exception ex)
+                    {
+                        logger.Log(ex.Message + "\r\n" + ex.StackTrace);
+                    }
                 }
             }
         }
@@ -194,8 +201,11 @@ namespace WebSocketServer
         {
             MessageBase temMsg = new MessageBase();
             string temp = string.Empty;
+            logger.Log(message);
 
-            MSG = Newtonsoft.Json.JsonConvert.DeserializeObject<MessageBase>(message.Replace(@"\",@"\\"));
+            MSG = Newtonsoft.Json.JsonConvert.DeserializeObject<MessageBase>(message);
+            MSG.Message = MSG.Message.Replace(@"\", @"\\").Replace("\""," ").Replace(";", " ").Replace("'", " ");
+            logger.Log(MSG.Message);
             //进入聊天室判断：MSG.Message 进入的昵称
             if (MSG.Type==MSGType.user && MSG.Action==MSGAction.login)
             {
