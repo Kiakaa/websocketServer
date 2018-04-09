@@ -203,9 +203,21 @@ namespace WebSocketServer
             string temp = string.Empty;
             logger.Log(message);
 
-            MSG = Newtonsoft.Json.JsonConvert.DeserializeObject<MessageBase>(message);
-            MSG.Message = MSG.Message.Replace(@"\", @"\\").Replace("\""," ").Replace(";", " ").Replace("'", " ");
-            logger.Log(MSG.Message);
+            try
+            {
+                MSG = Newtonsoft.Json.JsonConvert.DeserializeObject<MessageBase>(message);
+            }
+            catch (Exception ex)
+            {
+                SocketConnection sConn = sender as SocketConnection;
+                    SingleSend(
+                        JsonConvert.SerializeObject(new MessageBase() { Auth = "SYS", Type = MSGType.msg, Message = "昵称、消息内容请不要使用【'/\"】这些特殊符号。😄😄😄，", Action = MSGAction.sendmsg, State = false })
+                        , sConn);
+                connectionSocketList.Remove(sConn);
+                logger.Log(message + "\t Error:\r\n" + ex.Message + "\r\n" + ex.StackTrace);
+                return;
+            }
+            
             //进入聊天室判断：MSG.Message 进入的昵称
             if (MSG.Type==MSGType.user && MSG.Action==MSGAction.login)
             {
