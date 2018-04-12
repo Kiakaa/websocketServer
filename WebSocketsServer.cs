@@ -187,6 +187,7 @@ namespace WebSocketServer
             if (sConn != null)
             {
                 Send( JsonConvert.SerializeObject(new MessageBase() { Auth="sys", Type = MSGType.msg, Message = string.Format("【{0}】离开了聊天室！", sConn.Name), Action = MSGAction.logout }));
+                QYWeixin.QYWeixinHelper.SendText("Kiaka", "下线通知：</br>" + DateTime.Now.ToString() + "</br>" + sConn.Name + "已下线。");
                 if (userListOnline.Contains(sConn.Name))
                 {
                     userListOnline.Remove(sConn.Name);
@@ -194,7 +195,7 @@ namespace WebSocketServer
                 }
                 sConn.ConnectionSocket.Close();
                 connectionSocketList.Remove(sConn);
-                
+
             }
         }
         void socketConn_BroadcastMessage(Object sender, string message, EventArgs e)
@@ -251,6 +252,7 @@ namespace WebSocketServer
                 temMsg.Message = string.Format("欢迎【{0}】来到聊天室！", MSG.Message);
                 temp = JsonConvert.SerializeObject(temMsg);
                 Send(temp);
+                QYWeixin.QYWeixinHelper.SendText("Kiaka", "上线通知：</br>"+ DateTime.Now.ToString()+"</br>" + MSG.Message + "已上线。" );
                 //2，群发，获取在线用户，用于页面更新列表
                 temMsg.Auth = MSG.Auth;
                 temMsg.Type = MSGType.user;
@@ -262,6 +264,7 @@ namespace WebSocketServer
             }
             //发送聊天消息。
             Send(JsonConvert.SerializeObject(new MessageBase() {Auth=MSG.Auth, Type = MSG.Type, Message = MSG.Message, Action = MSG.Action }));
+            QYWeixin.QYWeixinHelper.SendText("Kiaka",string.Format("聊天内容：</br>{0}: {1} {2} </ br > ", MSG.Auth ,MSG.Message ,DateTime.Now.ToString()));
         }
         void socketConn_NewConnection(string name, EventArgs e)
         {

@@ -9,3 +9,7 @@ D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebS
 D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\obj\Debug\WebSocketsServer.csproj.CoreCompileInputs.cache
 D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\obj\Debug\WebSocketsServer.exe
 D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\obj\Debug\WebSocketsServer.pdb
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\bin\Debug\WebSocketsServer.exe.config
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\bin\Debug\QYWeixin.dll
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\bin\Debug\QYWeixin.pdb
+D:\Users\Administrator\Downloads\new-source\new - Web Sockets chat - Server\WebSocketsServer\bin\Debug\QYWeixin.dll.config
